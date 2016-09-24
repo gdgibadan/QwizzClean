@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <!-- app logo -->
+        <ImageView
+            android:src="@mipmap/quiz"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_view_app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/margin_top_xlarge"/>
+
+        <!-- layout for start and high score buttons -->
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- start button -->
+            <Button
+                android:id="@+id/button_start"
+                android:text="@string/button_text_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Button.Home"/>
+
+            <!-- high scores button -->
+            <Button
+                android:id="@+id/button_high_score"
+                android:text="@string/button_text_high_scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                style="@style/Widget.Button.Home"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

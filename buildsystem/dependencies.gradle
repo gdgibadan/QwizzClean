@@ -1,0 +1,30 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion    =   "24.0.1"
+    androidMinSdkVersion        =   15
+    androidTargetSdkVersion     =   24
+    androidCompileSdkVersion    =   24
+
+    //Libraries
+    daggerVersion           =   '2.0.2'
+    rxJavaVersion           =   '1.1.6'
+    rxAndroidVersion        =   '1.2.1'
+    javaxAnnotationVersion  =   '1.0'
+
+
+    //Testing
+
+    presentationDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid:          "io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}"
+    ]
+}

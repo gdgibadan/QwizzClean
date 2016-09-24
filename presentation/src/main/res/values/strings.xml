@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QwizzClean</string>
+
+    <!-- strings used in home fragment -->
+    <string name="button_text_start">Start</string>
+    <string name="button_text_high_scores">High scores</string>
 </resources>
